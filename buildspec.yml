@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Install NPM...
+      - npm install
+      - echo Creating a zip
+      - zip -r lambda.zip .
+
+  post_build:
+    commands:
+
+artifacts:
+  files:
+    - lambda.zip
