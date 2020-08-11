@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - junk-deploy-lambda:
+      Type: AWS::Lambda::Function
+      Properties:
+        Name: junk-deploy-lambda
+        Alias: junk-deploy-lambda-alias
+        CurrentVersion: 8
+        TargetVersion: 9
